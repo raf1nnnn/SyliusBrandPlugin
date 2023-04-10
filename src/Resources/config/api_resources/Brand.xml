@@ -12,6 +12,9 @@
             <collectionOperation name="shop_get">
                 <attribute name="method">GET</attribute>
                 <attribute name="path">/shop/brand</attribute>
+                <attribute name="filters">
+                    <attribute>product_highlighting.boolean_filter</attribute>
+                </attribute>
                 <attribute name="normalization_context">
                     <attribute name="groups">shop:product:read</attribute>
                 </attribute>
@@ -22,16 +25,19 @@
 
             <itemOperation name="shop_get">
                 <attribute name="method">GET</attribute>
-                <attribute name="path">/shop/brand/{id}</attribute>
+                <attribute name="path">/shop/brand/{code}</attribute>
                 <attribute name="normalization_context">
                     <attribute name="groups">shop:product:read</attribute>
                 </attribute>
             </itemOperation>
         </itemOperations>
 
-        <property name="id" identifier="true" writable="false"/>
+        <property name="id" identifier="false" writable="false"/>
         <property name="name" required="true"/>
-        <property name="code" required="true"/>
+        <property name="code" identifier="true" required="true"/>
+        <property name="enabled" required="true"/>
+
+        <property name="images" required="true"/>
         <property name="activeProducts" required="true"/>
         <property name="createdAt" writable="false"/>
         <property name="updatedAt" writable="false"/>

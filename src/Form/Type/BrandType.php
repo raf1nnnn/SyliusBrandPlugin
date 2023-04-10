@@ -10,6 +10,8 @@ use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Sylius\Bundle\ProductBundle\Form\Type\ProductAutocompleteChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
+
 
 final class BrandType extends AbstractResourceType
 {
@@ -31,6 +33,9 @@ final class BrandType extends AbstractResourceType
                 'allow_delete' => true,
                 'by_reference' => false,
                 'label' => 'loevgaard_sylius_brand.form.brand.images',
+            ])
+            ->add('enabled', CheckboxType::class, [
+                'label' => 'sylius.ui.enabled',
             ])
             ->add('products', ProductAutocompleteChoiceType::class, [
                 'label' => 'Products',

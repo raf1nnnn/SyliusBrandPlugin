@@ -25,6 +25,12 @@ sylius_grid:
                     type: string
                     label: loevgaard_sylius_brand.ui.code
                     sortable: ~
+                enabled:
+                    type: twig
+                    label: sylius.ui.enabled
+                    sortable: ~
+                    options:
+                        template: "@SyliusUi/Grid/Field/enabled.html.twig"
             filters:
                 search:
                     type: string

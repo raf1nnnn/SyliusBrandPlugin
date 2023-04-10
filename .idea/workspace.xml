@@ -5,31 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0449891-959d-4afb-a7c7-15dff8145d5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Resources/config/api_resources/Brand.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/config/app/resources.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/config/resources/brand.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/config/resources/brand_image.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/config/serialization/Brand.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/config/serialization/BrandImage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/Extension/ProductTypeExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/Extension/ProductTypeExtension.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Resources/config/api_platform/brand.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/Type/BrandType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/Type/BrandType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu/BrandFormMenuBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu/BrandFormMenuBuilder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Brand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Brand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/BrandImage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/BrandImage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/config/app/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/config/app/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/config/grids/loevgaard_sylius_brand_admin_api_brand.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/config/grids/loevgaard_sylius_brand_admin_api_brand_image.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/config/routing.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/config/routing.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/config/routing/admin/ajax/brand.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/config/routing/admin/ajax/brand.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/config/routing/admin_api.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/config/routing/admin_api/brand_image.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/config/routing_non_localized.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/config/routing_non_localized.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/config/serializer/Brand.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/config/serializer/BrandImage.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/config/services/form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/config/services/form.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/BrandInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/BrandInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/config/api_resources/Brand.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/config/api_resources/Brand.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/config/doctrine/model/Brand.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/config/doctrine/model/Brand.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/config/grids/loevgaard_sylius_brand_admin_brand.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/config/grids/loevgaard_sylius_brand_admin_brand.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/config/serialization/Brand.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/config/serialization/Brand.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/config/serialization/BrandImage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/config/serialization/BrandImage.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Resources/views/Admin/Brand/Tab/_details.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/views/Admin/Brand/Tab/_details.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/views/Form/imagesTheme.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/views/Form/imagesTheme.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681079426722</updated>
       <workItem from="1681079428230" duration="34000" />
-      <workItem from="1681079471469" duration="11631000" />
+      <workItem from="1681079471469" duration="14618000" />
     </task>
     <servers />
   </component>

@@ -26,8 +26,8 @@ final class BrandDeletionListener
             );
         }
 
-        if ($brand->hasProducts()) {
-            $event->stop('loevgaard_sylius_brand.brand.delete_error');
-        }
+//        if ($brand->hasProducts()) {
+//            $event->stop('loevgaard_sylius_brand.brand.delete_error');
+//        }
     }
 }

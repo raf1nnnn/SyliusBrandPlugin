@@ -1,0 +1,5 @@
+Loevgaard\SyliusBrandPlugin\Model\Brand:
+    operations:
+        ApiPlatform\Metadata\GetCollection:
+            filters: ['footer_list.boolean_filter']
+

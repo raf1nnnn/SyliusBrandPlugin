@@ -3,9 +3,12 @@
 declare(strict_types=1);
 
 namespace Loevgaard\SyliusBrandPlugin\Model;
+use Sylius\Component\Resource\Model\ToggleableTrait;
 
 class Brand implements BrandInterface
 {
+    use ToggleableTrait;
+
     use ProductsAwareTrait {
         ProductsAwareTrait::__construct as private __productsAwareTraitConstruct;
     }

@@ -9,6 +9,7 @@ use Sylius\Component\Core\Model\Image;
 class BrandImage extends Image implements BrandImageInterface
 {
     public const TYPE_LOGO = 'logo';
+    private string $imagePath ;
 
     public function isLogo(): bool
     {
@@ -34,7 +35,8 @@ class BrandImage extends Image implements BrandImageInterface
         $this->setOwner($brand);
     }
 
-    public function getImagePath(){
-        return 'media/image/'.$this->getPath();
+    public function getImagePath()
+    {
+        return 'media/image/' . $this->getPath();
     }
 }

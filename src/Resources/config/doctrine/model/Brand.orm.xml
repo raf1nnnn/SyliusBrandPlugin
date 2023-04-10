@@ -8,16 +8,22 @@
 
     <mapped-superclass name="Loevgaard\SyliusBrandPlugin\Model\Brand" table="loevgaard_brand">
         <id name="id" column="id" type="integer">
-            <generator strategy="AUTO" />
+            <generator strategy="AUTO"/>
         </id>
-        <one-to-many field="images" target-entity="Loevgaard\SyliusBrandPlugin\Model\BrandImageInterface" mapped-by="owner" orphan-removal="true">
+        <one-to-many field="images" target-entity="Loevgaard\SyliusBrandPlugin\Model\BrandImageInterface"
+                     mapped-by="owner" orphan-removal="true">
             <cascade>
                 <cascade-all/>
             </cascade>
+            <join-column on-delete="SET NULL"/>
+
         </one-to-many>
-        <one-to-many field="products" target-entity="Sylius\Component\Product\Model\ProductInterface" mapped-by="brand" fetch="EXTRA_LAZY" />
-        <field name="code" type="string" unique="true" />
-        <field name="name" type="string" />
+        <one-to-many field="products" target-entity="Sylius\Component\Product\Model\ProductInterface" mapped-by="brand"
+                     fetch="EXTRA_LAZY"/>
+        <field name="code" type="string" unique="true"/>
+        <field name="name" type="string"/>
+        <field name="enabled" type="boolean"/>
+
     </mapped-superclass>
 
 </doctrine-mapping>

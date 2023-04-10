@@ -6,8 +6,10 @@ namespace Loevgaard\SyliusBrandPlugin\Model;
 
 use Sylius\Component\Resource\Model\CodeAwareInterface;
 use Sylius\Component\Resource\Model\ResourceInterface;
+use Sylius\Component\Resource\Model\ToggleableInterface;
 
-interface BrandInterface extends ResourceInterface, CodeAwareInterface, ProductsAwareInterface, ImagesAwareInterface
+interface BrandInterface extends ResourceInterface, CodeAwareInterface, ProductsAwareInterface, ImagesAwareInterface, ToggleableInterface
+
 {
     /**
      * Returns the name of the brand
