@@ -9,6 +9,7 @@ use Sylius\Bundle\ResourceBundle\Form\Type\AbstractResourceType;
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Sylius\Bundle\ProductBundle\Form\Type\ProductAutocompleteChoiceType;
 
 final class BrandType extends AbstractResourceType
 {
@@ -30,6 +31,16 @@ final class BrandType extends AbstractResourceType
                 'allow_delete' => true,
                 'by_reference' => false,
                 'label' => 'loevgaard_sylius_brand.form.brand.images',
+            ])
+            ->add('products', ProductAutocompleteChoiceType::class, [
+                'label' => 'Products',
+                'multiple' => true,
+                'required' => true,
+                'resource' => 'sylius.product',
+                'choice_value' => 'code',
+                'choice_name' => 'name',
+                'data' => $options['data']->getProducts(),
+                'data_class' => null
             ]);
     }
 

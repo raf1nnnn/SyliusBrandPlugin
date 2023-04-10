@@ -1,11 +1,10 @@
 loevgaard_sylius_brand_admin_ajax_brands_by_phrase:
-    path: /search
+    path: /search/brand
     methods: [GET]
     defaults:
-        _controller: loevgaard_sylius_brand.controller.brand:indexAction
+        _controller: loevgaard_sylius_brand.controller.brand::indexAction
         _format: json
         _sylius:
-            serialization_groups: [Autocomplete]
             permission: true
             repository:
                 method: findByPhrase
@@ -13,13 +12,12 @@ loevgaard_sylius_brand_admin_ajax_brands_by_phrase:
                     phrase: $phrase
 
 loevgaard_sylius_brand_admin_ajax_brand_by_code:
-    path: /
+    path: /brand/search/
     methods: [GET]
     defaults:
-        _controller: loevgaard_sylius_brand.controller.brand:indexAction
+        _controller: loevgaard_sylius_brand.controller.brand::indexAction
         _format: json
         _sylius:
-            serialization_groups: [Autocomplete]
             permission: true
             repository:
                 method: findBy

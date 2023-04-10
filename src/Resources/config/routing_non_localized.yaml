@@ -5,6 +5,4 @@ loevgaard_sylius_brand_admin:
     resource: "@LoevgaardSyliusBrandPlugin/Resources/config/routing/admin.yaml"
     prefix: /admin
 
-loevgaard_sylius_brand_admin_api:
-    resource: "@LoevgaardSyliusBrandPlugin/Resources/config/routing/admin_api.yaml"
-    prefix: /api/v{version}
+

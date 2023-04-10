@@ -27,6 +27,10 @@ class Brand implements BrandInterface
      * @var string|null
      */
     protected $name;
+    /**
+     * @psalm-var Collection<array-key, ProductInterface>
+     */
+    private Collection $activeProducts;
 
     public function __construct()
     {
@@ -96,5 +100,19 @@ class Brand implements BrandInterface
             $product->setBrand(null);
             $this->products->removeElement($product);
         }
+    }
+    public function getActiveProducts(): array
+    {
+        $activeProducts = [];
+
+        foreach ($this->products as $product) {
+            if ($product->isEnabled()) {
+                $activeProducts[] = $product;
+            }else
+                continue;
+        }
+
+        return $activeProducts;
+
     }
 }

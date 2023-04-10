@@ -1,0 +1,9 @@
+sylius_resource:
+    resources:
+        loevgaard_sylius_brand.brand_image:
+            driver: doctrine/orm
+            classes:
+                model: Loevgaard\SyliusBrandPlugin\Model\BrandImage
+                interface: Loevgaard\SyliusBrandPlugin\Model\BrandImageInterface
+                factory: Sylius\Component\Resource\Factory\Factory
+                form: Loevgaard\SyliusBrandPlugin\Form\Type\BrandImageType

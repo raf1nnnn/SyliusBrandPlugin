@@ -33,4 +33,8 @@ class BrandImage extends Image implements BrandImageInterface
     {
         $this->setOwner($brand);
     }
+
+    public function getImagePath(){
+        return 'media/image/'.$this->getPath();
+    }
 }

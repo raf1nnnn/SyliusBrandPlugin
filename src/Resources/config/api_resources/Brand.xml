@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+
+<resources xmlns="https://api-platform.com/schema/metadata"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="https://api-platform.com/schema/metadata https://api-platform.com/schema/metadata/metadata-2.0.xsd"
+>
+    <resource class="%loevgaard_sylius_brand.model.brand.class%" shortName="Brand">
+        <attribute name="validation_groups">odiseo</attribute>
+
+        <collectionOperations>
+
+            <collectionOperation name="shop_get">
+                <attribute name="method">GET</attribute>
+                <attribute name="path">/shop/brand</attribute>
+                <attribute name="normalization_context">
+                    <attribute name="groups">shop:product:read</attribute>
+                </attribute>
+            </collectionOperation>
+        </collectionOperations>
+
+        <itemOperations>
+
+            <itemOperation name="shop_get">
+                <attribute name="method">GET</attribute>
+                <attribute name="path">/shop/brand/{id}</attribute>
+                <attribute name="normalization_context">
+                    <attribute name="groups">shop:product:read</attribute>
+                </attribute>
+            </itemOperation>
+        </itemOperations>
+
+        <property name="id" identifier="true" writable="false"/>
+        <property name="name" required="true"/>
+        <property name="code" required="true"/>
+        <property name="activeProducts" required="true"/>
+        <property name="createdAt" writable="false"/>
+        <property name="updatedAt" writable="false"/>
+    </resource>
+</resources>

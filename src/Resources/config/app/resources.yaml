@@ -1,0 +1,3 @@
+imports:
+    - { resource: ../resources/brand.yaml }
+    - { resource: ../resources/brand_image.yaml }

@@ -20,6 +20,8 @@ class ProductTypeExtension extends AbstractTypeExtension
             'placeholder' => 'loevgaard_sylius_brand.form.product.select_brand',
             'label' => 'loevgaard_sylius_brand.form.product.brand',
             'required' => false,
+            'data' => $options['data']->getBrand(),
+            'data_class'=>null
         ]);
     }
 
