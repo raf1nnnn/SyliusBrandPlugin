@@ -186,6 +186,24 @@ sylius_product:
 
 ```  
 
+#### Under /config/serialization add a new file named Product.xml and add this code under it
+
+```xml
+<?xml version="1.0" ?>
+
+<serializer xmlns="http://symfony.com/schema/dic/serializer-mapping"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://symfony.com/schema/dic/serializer-mapping https://symfony.com/schema/dic/serializer-mapping/serializer-mapping-1.0.xsd"
+>
+    <class name="Sylius\Component\Core\Model\Product">
+        <attribute name="brand">
+            <group>admin:product:read</group>
+            <group>shop:product:read</group>
+        </attribute>
+    </class>
+</serializer>
+```  
+
 ### Step 5: Update your database schema
 
 ```bash
