@@ -37,6 +37,6 @@ class BrandImage extends Image implements BrandImageInterface
 
     public function getImagePath()
     {
-        return 'media/image/' . $this->getPath();
+        return '/media/image/' . $this->getPath();
     }
 }
