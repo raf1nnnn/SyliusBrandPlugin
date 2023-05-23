@@ -12,6 +12,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerConfigs">
+    <option name="configs">
+      <option value="$PROJECT_DIR$/tests/Application/composer.json" />
+    </option>
+  </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
@@ -22,6 +27,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
   <component name="ProjectId" id="2OCzbvUYX7kClAtrnfwvrduCFEK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -32,7 +38,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/dotit/Bureau/Dotit/SyliusBrandPlugin&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dotit/Bureau/Dotit/syliusbannerplugin&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -59,6 +65,12 @@
       <workItem from="1681263725671" duration="539000" />
       <workItem from="1681432854536" duration="192000" />
       <workItem from="1681433114108" duration="182000" />
+      <workItem from="1681434255250" duration="199000" />
+      <workItem from="1681692416923" duration="3037000" />
+      <workItem from="1681697285363" duration="3044000" />
+      <workItem from="1682516552327" duration="636000" />
+      <workItem from="1682519786704" duration="675000" />
+      <workItem from="1684140147757" duration="49000" />
     </task>
     <servers />
   </component>
